@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walidator formularza</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <form>
+        <h1>Zarejestruj się</h1>
+        <div class="form-elem">
+          <label for="username">Nazwa uzytkownika:</label>
+          <input
+            id="username"
+            type="text"
+            placeholder="Podaj nazwę uzytkownika"
+          />
+          <p class="error-text">error</p>
+        </div>
+        <div class="form-elem">
+          <label for="password">Hasło:</label>
+          <input id="password" type="password" placeholder="Podaj hasło" />
+          <p class="error-text">error</p>
+        </div>
+        <div class="form-elem">
+          <label for="passwordcheck">Powtórz hasło:</label>
+          <input id="passwordcheck" type="password" placeholder="Podaj hasło" />
+          <p class="error-text">error</p>
+        </div>
+        <div class="form-elem">
+          <label for="email">Adres e-mail:</label>
+          <input id="email" type="email" placeholder="Podaj adres mailowy" />
+          <p class="error-text">error</p>
+        </div>
+
+        <div class="buttons">
+          <button class="clean">Wyczyść</button>
+          <button class="send">Wyślij</button>
+        </div>
+
+        <div class="popup">
+          <p>Formularz został poprawnie wysłany!</p>
+          <button class="close">Zamknij</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
