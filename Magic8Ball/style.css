@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(
+    320deg,
+    rgb(63, 95, 146) 0%,
+    rgb(124, 73, 211) 80%
+  );
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 600px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 20px;
+}
+
+.ball-img {
+  position: relative;
+  height: 250px;
+}
+
+.ball-img img {
+  position: absolute;
+  top: 30px;
+  left: -180px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.question {
+  display: inline-block;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.question h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.question input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.question .answear {
+  margin-top: 20px;
+}
+
+.question .answear span {
+  font-weight: bold;
+}
+
+.question .error {
+  font-weight: bold;
+  color: red;
+}
+
+.shake-animation {
+  animation: shake 1s 1;
+}
+
+@keyframes shake {
+  0% {
+    left: -190px;
+  }
+
+  20% {
+    left: -240px;
+  }
+
+  40% {
+    left: -190px;
+  }
+
+  60% {
+    left: -140px;
+  }
+
+  80% {
+    left: -190px;
+  }
+
+  100% {
+    left: -180px;
+  }
+}
