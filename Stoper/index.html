@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/52d2b1d627.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Stoper</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="info">
+        <i class="fas fa-question"></i>
+        <i class="fas fa-paint-brush"></i>
+      </div>
+      <div class="colors">
+        <div class="color one"></div>
+        <div class="color two"></div>
+        <div class="color three"></div>
+        <div class="color four"></div>
+      </div>
+      <h1>Stoper</h1>
+      <p class="stopwatch">00:00</p>
+      <p class="time">00:00</p>
+      <div class="buttons">
+        <button class="play"><i class="fas fa-play"></i></button>
+        <button class="pause"><i class="fas fa-pause"></i></button>
+        <button class="stop"><i class="fas fa-stop"></i></button>
+        <button class="reset"><i class="fas fa-times"></i></button>
+        <button class="history">archiwum</button>
+      </div>
+      <ul class="time-list"></ul>
+    </div>
+
+    <div class="modal-shadow modal-animation">
+      <div class="modal">
+        <h2>Instrukcja:</h2>
+        <p><i class="fas fa-play"></i> - start</p>
+        <p><i class="fas fa-pause"></i> - pauza</p>
+        <p><i class="fas fa-stop"></i> - stop</p>
+        <p>
+          <i class="fas fa-times"></i> - skasuj wszystko (łącznie z archiwum)
+        </p>
+        <p><strong>archiwum</strong> - zobacz wcześniejsze pomiary</p>
+        <button class="modal-close">Zamknij</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
