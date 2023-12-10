@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f6f6f4;
+  font-family: Montserrat;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #edeae5;
+}
+
+.menuBtns {
+  display: flex;
+  justify-content: end;
+  color: #2f3d4c;
+}
+
+h1 {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2f3d4c;
+}
+
+.addBtn,
+.removeBtn,
+.saveBtn,
+.cancelBtn {
+  margin: 10px;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background-color: #edeae5;
+  border: 1px solid #2f3d4c;
+  color: #2f3d4c;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.addBtn:hover,
+.removeBtn:hover,
+.saveBtn:hover,
+.cancelBtn:hover {
+  background-color: #979fa5;
+}
+
+.noteArea {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #2f3d4c;
+  box-shadow: 0 0 10px #2f3d4c;
+  margin: 10px;
+  background-color: #ced9dd;
+  font-size: 10px;
+}
+
+.noteHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2f3d4c;
+  padding: 10px;
+  font-size: 15px;
+  border-bottom: 1px solid #2f3d4c;
+  color: #f6f6f4;
+}
+
+.noteBody {
+  padding: 10px;
+  font-size: 10px;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+.addPanel {
+  visibility: hidden;
+  position: absolute;
+  background-color: #f6f6f4;
+  width: 500px;
+  height: 380px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #2f3d4c;
+  box-shadow: 0 0 10px #2f3d4c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2f3d4c;
+}
+
+h2 {
+  margin: 10px;
+}
+label {
+  margin: 10px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 15px;
+  margin: 10px;
+  width: 80%;
+  padding: 5px;
+  border-radius: 0;
+  border: 1px solid #2f3d4c;
+  color: #2f3d4c;
+}
+
+textarea {
+  width: 80%;
+  height: 60px;
+  font-size: 15px;
+  max-height: 800px;
+  resize: vertical;
+  color: #2f3d4c;
+  border: 1px solid #2f3d4c;
+}
+
+.panelBtns {
+  display: flex;
+  margin-top: 20px;
+}
+
+.deleteNoteBtn {
+  border: none;
+  background-color: #2f3d4c;
+  font-size: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: font-size 0.3s;
+  color: #f6f6f4;
+}
+
+.deleteNoteBtn:hover {
+  font-size: 17px;
+}
+
+.error {
+  display: none;
+  color: red;
+  margin-top: 20px;
+}
