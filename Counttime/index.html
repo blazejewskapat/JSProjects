@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Czaso-odliczator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/52d2b1d627.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="counter">
+      <div class="app">
+        <div class="image-section">
+          <button class="optionsBtn">
+            <i class="fa-regular fa-sliders"></i>
+          </button>
+        </div>
+        <div class="calendar">
+          <h1><span class="event">Koniec roku </span> za:</h1>
+          <div class="pages">
+            <div class="days">
+              <p class="day-counts">-</p>
+              <p class="card-title">Dni</p>
+            </div>
+            <div class="hours">
+              <p class="hours-counts">-</p>
+              <p class="card-title">Godzin</p>
+            </div>
+            <div class="minutes">
+              <p class="minutes-counts">-</p>
+              <p class="card-title">Minut</p>
+            </div>
+            <div class="seconds">
+              <p class="seconds-counts">-</p>
+              <p class="card-title">Sekund</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="settings">
+        <h3>Ustawienia</h3>
+        <label for="name">Nazwa wydarzenia:</label>
+        <input type="text" id="name" value="Koniec roku" />
+        <label for="data">Dzień/miesiąc/rok, godzina:</label>
+        <input type="datetime-local" id="data" value="2024-01-01T00:00" />
+        <label for="imgLink">Obrazek:</label>
+        <input type="text" id="img-link" value="default.png" />
+        <button class="save">Zapisz</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
