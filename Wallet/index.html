@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/52d2b1d627.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+      <div class="header">
+        <h1 class="title"><i class="fa-solid fa-wallet"></i> Wallet</h1>
+        <p class="description">Twój osobisty menedzer finansów</p>
+      </div>
+      <div class="wallet">
+        <div class="transactions">
+          <h2>LISTA TRANSAKCJI</h2>
+          <div class="transactionList">
+            <div class="income">
+              <h3 class="incomeHeader">Przychód:</h3>
+              <!-- <div class="transaction" id="0">
+                <p class="transactionName">
+                  <i class="fa-solid fa-money-bill"></i> Wypłata
+                </p>
+                <p class="transactionAmount">
+                  2500zł
+                  <button class="delete">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </p>
+              </div> -->
+            </div>
+
+            <div class="expense">
+              <h3 class="expenseHeader">Wydatki:</h3>
+              <!-- <div class="transaction" id="1">
+                <p class="transactionName">
+                  <i class="fa-solid fa-money-bill"></i> Zakupy
+                </p>
+                <p class="transactionAmount">
+                  -2500zł<button class="delete">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </p>
+              </div>
+              <div class="transaction" id="2">
+                <p class="transactionName">
+                  <i class="fa-solid fa-money-bill"></i> Zakupy
+                </p>
+                <p class="transactionAmount">
+                  -2500zł<button class="delete">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="options">
+          <h2>DOSTĘPNE ŚRODKI</h2>
+          <p class="money">0zł</p>
+          <div class="statusBtns">
+            <button class="addBtn">
+              <i class="fa-solid fa-plus"></i> Dodaj transakcję
+            </button>
+            <button class="removeBtn">
+              <i class="fa-solid fa-trash"></i> Usuń wszystko
+            </button>
+          </div>
+          <h2>WYBIERZ STYL</h2>
+          <div class="colors">
+            <button class="lightColor"></button>
+            <button class="darkColor"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="newTrPage">
+        <h2>DODAJ NOWĄ TRANSAKCJĘ</h2>
+        <label for="name">Nazwa: </label>
+        <small>(podaj nazwę transakcji)</small>
+        <input type="text" id="name" />
+        <label for="price">Kwota:</label>
+        <small>
+          >(podaj kwotę transakcji, jeśli dodajesz wydatek, postaw znak minusa
+          na początku kwoty)</small
+        >
+        <input type="number" id="price" />
+        <label for="category">Wybierz kategorię:</label>
+        <small>([+] oznacza przychód, [-] oznacza wydatek)</small>
+        <select id="category">
+          <option value="0" disabled selected>-- wybierz kategorię --</option>
+          <option value="1">Zakupy</option>
+          <option value="2">Wypata</option>
+          <option value="3">Inne</option>
+        </select>
+        <div class="newTrBtns">
+          <button class="saveBtn">
+            <i class="fa-regular fa-floppy-disk"></i> Zapisz
+          </button>
+          <button class="cancelBtn">
+            <i class="fa-regular fa-rectangle-xmark"></i> Anuluj
+          </button>
+        </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
