@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO list</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/52d2b1d627.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="todoApp">
+      <div class="header">
+        <h1 class="appName">TODO LIST</h1>
+        <div class="inputOptions">
+          <input
+            id="givenTaskName"
+            type="text"
+            placeholder="Wpisz treść zadania..."
+          />
+          <button class="addTask">ADD</button>
+        </div>
+      </div>
+      <div class="tasks">
+        <h2 class="tasksListName">LISTA ZADAŃ:</h2>
+        <p class="tasksError">Brak zadań na liście!</p>
+      </div>
+    </div>
+    <div class="panelToEditTask">
+      <h3 class="editTaskName">Edytuj zadanie:</h3>
+      <p class="editError">Musisz podać jakąś treść!</p>
+      <input type="text" id="newTaskName" placeholder="" />
+      <div class="editTaskBtns">
+        <button class="accept">ZATWIERDŹ</button>
+        <button class="cancel">ANULUJ</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
